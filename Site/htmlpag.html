@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Lue site responsivo</title>
+</head>
+<body>
+    <header> <h1> Lue </h1>
+    <section class="menu">
+        <ul class="menu-list">
+            <li> Home </li>
+            <li> <class class="atcive"> Produtos </class></li>
+            <li>Perguntas</li>
+            <li>Contato</li>
+        </ul>
+        <button>
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
+        </button>
+    </section>
+</header>
+    <section class="main">
+        <section class="left">
+            <p class="title">Automação Residencial</p>
+            <p class="msg"> Automação residencial é aplicar todas as tecnologias existentes dentro de casa para facilitar tarefas que antes dependiam somente do morador. Sensores de fumaça, fechaduras eletreletrônicas e temporizadores são alguns exemplos de automatização.
+                Automação residencial é fazer com que todos os sistemas eletrônicos funcionem como um só, sob o nosso total controle e de acordo com nossos hábitos, necessidades e gostos.
+                Parece bom, não?</p>
+            <button class="cta"> Ler Mais</button>
+        </section>
+        <section class="right">
+            <img src="Scr/internet-of-things.png" alt="Ianding Image">
+        </section>
+    </section>
+    <script>
+        var menu = document.querySelector('.menu')
+        var menuBtn = document.querySelector('.menu button')
+        menuBtn.addEventListener('click', function (){
+          menu.classList.toggle('opened')  
+        })
+    </script>
+</body>
+</html>
